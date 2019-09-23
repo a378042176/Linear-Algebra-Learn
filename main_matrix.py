@@ -32,3 +32,8 @@ if __name__ == "__main__":
     print("B.dot(A) = {}".format(matrix2.dot(matrix)))
 
     print("P.T = {}".format(P.T()))
+
+    I = Matrix.identity(2)
+    print("2*2的单位矩阵:", I)
+    print("A.dot(I) = {}".format(matrix.dot(I))) #矩阵A乘单位矩阵或单位矩阵乘矩阵A，结果都是矩阵A
+    print("I.dot(A) = {}".format(I.dot(matrix)))
